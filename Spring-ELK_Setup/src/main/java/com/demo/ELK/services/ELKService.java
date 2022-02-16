@@ -23,7 +23,7 @@ public class ELKService {
         JSONArray foodDetail = new JSONArray();
         try {
             JSONParser parser = new JSONParser();
-            Object obj = parser.parse(new FileReader("example.json", StandardCharsets.UTF_8));
+            Object obj = parser.parse(new FileReader("./example.json", StandardCharsets.UTF_8));
             JSONObject jsonObject = (JSONObject) obj;
             foodDetail = (JSONArray) jsonObject.get("data");
 
